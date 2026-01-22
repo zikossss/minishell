@@ -49,7 +49,6 @@ char	*findvar(t_mini *ls, char *nameofvar)
 			return (varvalue);
 		}
 	}
-	ls->isambiguous = 1;
 	return (NULL);
 }
 
