@@ -1,8 +1,8 @@
 CC = cc
 
-CFLAGS  = -Wall -Wextra -Werror
+CFLAGS  = -Wall -Wextra -Werror // -Wall -Wextra -Werror -I/usr/local/opt/readline/include  for MacOs 
 
-LDFLAGS = -lreadline
+LDFLAGS = -lreadline // -L/usr/local/opt/readline/lib -lreadline for MacOs 
 
 SRC = built_ins/cd/cd.c built_ins/cd/cd_utils.c \
 	built_ins/echo/echo.c built_ins/echo/echo_utils.c \
